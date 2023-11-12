@@ -1,0 +1,84 @@
+.home {
+    margin-top: 78px;
+}
+.main-banner {
+    width: 100%;
+}
+.main-explanation {
+    padding-top: 66px;
+    padding-bottom: 66px;
+    background: #0F0F0F;
+}
+.main-explanation-title {
+    color: #FFF;
+    /*font-family: DIN Alternate, sans-serif;*/
+    font-size: 54.857px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 82.286px */
+    letter-spacing: -0.603px;
+    text-align: left;
+    margin: 0;
+}
+.main-explanation-description {
+    color: #B7B7B7;
+    font-family: Open Sans, sans-serif;
+    font-size: 20.571px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30.857px */
+    letter-spacing: -0.226px;
+    max-width: 527px;
+    margin: 0;
+    text-align: left;
+}
+.reach {
+    background: #000;
+    padding-top: 74px;
+    padding-bottom: 101px;
+}
+.films {
+    background: #1D1D1D;
+    padding-bottom: 51px;
+    padding-top: 34px;
+}
+/*slider css*/
+.carousel-control-next {
+    min-width: 100px;
+    opacity: 0 !important;
+}
+.carousel-control-next:hover {
+    background: #444444;
+    opacity: .8 !important;
+}
+.carousel-control-prev {
+    min-width: 100px;
+    opacity: 0 !important;
+}
+.carousel-control-prev:hover {
+    background: #444444;
+    opacity: .8 !important;
+}
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .main-explanation-title{
+        color: #FFF;
+        /*font-family: DIN Alternate, sans-serif;*/
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 60px */
+        letter-spacing: -0.44px;
+    }
+    .films {
+        padding-top: 19px;
+    }
+    .reach {
+        padding-left: 0!important;
+        padding-right: 0!important;
+        padding-bottom: 0;
+    }
+}

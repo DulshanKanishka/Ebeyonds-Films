@@ -1,0 +1,34 @@
+.logo-container {
+    width: 200px !important;
+    display: flex;
+}
+
+.logo-container > img {
+    width: 191px;
+    height: 46px;
+}
+
+.menu-container {
+    width: calc(100% - 200px) !important;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header {
+    background: #0F0F0F;
+    height: 78px;
+}
+
+.header-inner {
+    height: 78px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .ebeyonds-container.header.fixed-top {
+        padding-top: 10px;
+    }
+}

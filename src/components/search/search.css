@@ -1,0 +1,225 @@
+.card {
+    background: #1D1D1D !important;
+    /*padding: 15px;*/
+    border: none;
+}
+
+.input-box {
+    position: relative;
+}
+
+.input-box i {
+    position: absolute;
+    right: 13px;
+    top: 15px;
+    color: #ced4da;
+
+}
+
+.form-control {
+    height: 50px;
+    background-color: #eeeeee69;
+}
+
+.form-control:focus {
+    background-color: #eeeeee69;
+    box-shadow: none;
+    border-color: #eee;
+}
+
+
+.list {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.border-bottom {
+    border-bottom: 2px solid #eee;
+}
+
+.list i {
+    font-size: 19px;
+    color: red;
+}
+
+.list small {
+    color: #dedddd;
+}
+
+.search-icon > svg {
+    font-size: 20px;
+    width: 44px;
+    justify-content: center;
+    color: white;
+}
+
+.search-icon {
+    position: absolute;
+    display: flex;
+    height: 49px;
+    align-items: center;
+}
+
+.input-box {
+    display: flex;
+}
+
+.searchbar-holder {
+    width: 424px !important;
+}
+
+.search-field {
+    border-radius: 4px !important;
+    border: 0.5px solid #FFF !important;
+    background: #1D1D1D !important;
+    padding-left: 44px !important;
+    color: #A3A3A3 !important;
+    font-family: Open Sans, sans-serif;
+    font-size: 18.286px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 150% !important; /* 27.429px */
+    letter-spacing: -0.201px;
+}
+
+.search-field::placeholder {
+    color: #A3A3A3 !important;
+    font-family: Open Sans, sans-serif;
+    font-size: 18.286px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 150% !important; /* 27.429px */
+    letter-spacing: -0.201px;
+}
+
+.result {
+    border: 1px solid #ffffffd9;
+    /*width: 400px;*/
+    display: flex;
+    margin-top: -1px;
+    border-bottom: 1px solid #ffffffa1;
+    padding: 5px;
+    width: 396px;
+    margin-left: 1px;
+    cursor: pointer;
+}
+
+.result:last-child {
+    border-bottom: 1px solid #ffffffd9;
+    display: flex;
+    margin-top: -1px;
+    border-bottom: 1px solid #ffffffa1;
+    padding: 5px;
+    width: 396px;
+    margin-left: 1px;
+}
+
+.result-title-container {
+    width: calc(100% - 51px);
+    text-align: left;
+    padding-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.result-img-container {
+    width: 61px;
+}
+
+.result-img {
+    width: 60px;
+    height: 84px;
+}
+
+.result-rating {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.result-title {
+    color: #EAEAEA;
+    font-family: Inter, sans-serif;
+    font-size: 18.286px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 27.429px */
+    letter-spacing: -0.201px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.result-rating {
+    color: #B7B7B7;
+    font-family: Open Sans, sans-serif;
+    font-size: 17.571px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30.857px */
+    letter-spacing: -0.226px;
+}
+
+.minimum-type {
+    color: #fa3a3a;
+    font-family: Open Sans, sans-serif;
+    font-size: 17.571px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30.857px */
+    letter-spacing: -0.226px;
+    text-align: center;
+    border: 1px solid #ffffffd9;
+    padding: 10px;
+    width: 396px;
+    margin-top: -1px;
+    margin-left: 2px;
+}
+
+.hidden-div {
+    display: none;
+}
+
+.rating-container {
+    position: absolute;
+    margin-top: 50px;
+    background: #1D1D1D;
+    z-index: 2;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 480px) {
+
+    .searchbar-holder {
+        max-width: 300px !important;
+    }
+
+    .result {
+        max-width: 271px !important;
+    }
+    .result-title {
+        font-size: 16px;
+    }
+    .result-rating {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 400px) {
+
+    .searchbar-holder {
+        max-width: 285px !important;
+    }
+
+    .result {
+        max-width: 256px !important;
+    }
+    .result-title {
+        font-size: 16px;
+    }
+    .result-rating {
+        font-size: 15px;
+    }
+}
