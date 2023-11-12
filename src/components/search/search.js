@@ -33,25 +33,23 @@ const Search = (props) => {
 
         // If a match is found, remove HTML tags from the captured text (group 1) and trim leading or trailing spaces
         // Otherwise, return an empty string
-        return match ? match[1].replace(/<\/?[^>]+(>|$)/g, '').trim() : '';
+        if (match) {
+            return match ? match[1].replace(/<\/?[^>]+(>|$)/g, '').trim() : '';
+        } else {
+            return 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut…';
+        }
+
     }
 
     const addItem = (data) => {
-        console.log(data.show);
         const shortdesc = extractAndRemovePTags(data.show.summary);
         const arr = {
+            id: data.show.id + '',
             image: data.show.image.original,
             title: data.show.name,
             shortDescription: shortdesc,
         }
         props.additems(arr);
-        // let oldarray = props.itemsArray;
-        // oldarray.push(arr);
-        // props.setItemsArray(oldarray);
-        // console.log('4')
-        // console.log(oldarray)
-        // console.log('oldarray')
-        // console.log(arr);
     }
 
     function createautocomplete(datas) {
