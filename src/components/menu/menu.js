@@ -40,9 +40,9 @@ const Menu = () => {
                                 <hr/>
                             </li>
                             <li className={activeMenuItem === 'menuu' ? 'nav-item desctop-menu-item active' : 'nav-item desctop-menu-item'}>
-                                <button className="navbar-toggler mobile-menu-btn" type="button">
+                                <div className="navbar-toggler mobile-menu-btn" >
                                     <MenuIcon/>
-                                </button>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -61,9 +61,16 @@ const Menu = () => {
                          aria-labelledby="offcanvasDarkNavbarLabel">
                         <div className="offcanvas-header">
                             <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel">Ebeyonds</h5>
-                            <button type="button" className="btn-close btn-close-white navbar-toggler-icon"
+                            <button type="button" className="btn-close btn-close-white navbar-toggler-icon mob-menu-close"
                                     data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
+                                    aria-label="Close">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none">
+                                    <path d="M0.786133 0H57.929V57.1429H0.786133V0Z" fill="#1D1D1D" fillOpacity="0.902"/>
+                                    <path d="M22.8926 22.1062L35.8225 35.0362" stroke="#B7B7B7" strokeWidth="2.28571"/>
+                                    <path d="M35.8232 22.1061L22.8933 35.036" stroke="#B7B7B7" strokeWidth="2.28571"/>
+                                </svg>
+                            </button>
                         </div>
                         <div className="offcanvas-body">
                             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">

@@ -112,47 +112,49 @@ const Reach = () => {
                 <div className={'reach-form'}>
                     <form className={'reach-form-form row'}>
                         <div className="col-sm-6 field">
-                            <label htmlFor="firstname" className="form-label">First Name *</label>
-                            <input type="input" className="form-control" id="firstname" value={selectedfirstname}
-                                   onChange={e => setSelectedfirstname(e.target.value)}
-                                   aria-describedby="firstname"/>
-                            <div id="emailHelp"
+                            <label htmlFor="firstname" className="form-label">First Name *
+
+                                <input type="input" className="form-control" id="firstname" value={selectedfirstname}
+                                       onChange={e => setSelectedfirstname(e.target.value)}
+                                       aria-describedby="firstname"/>
+                            </label>
+                            <div id="fnameHelp"
                                  className={selectedfirstnameerror === '' ? 'form-text' : 'form-text active'}>{selectedfirstnameerror}
                             </div>
                         </div>
                         <div className="col-sm-6 field">
-                            <label htmlFor="lastname" className="form-label">Last Name *</label>
-                            <input type="input" className="form-control" id="lastname" value={selectedlastname}
-                                   onChange={e => setSelectedlastname(e.target.value)}
-                                   aria-describedby="lastnameHelp"/>
-                            <div id="emailHelp"
+                            <label htmlFor="lastname" className="form-label">Last Name *
+                                <input type="input" className="form-control" id="lastname" value={selectedlastname}
+                                       onChange={e => setSelectedlastname(e.target.value)}
+                                       aria-describedby="lastnameHelp"/></label>
+                            <div id="lnameHelp"
                                  className={selectedlastnameerror === '' ? 'form-text' : 'form-text active'}>{selectedlastnameerror}
                             </div>
                         </div>
                         <div className="col-12 field">
-                            <label htmlFor="exampleInputEmail1" className="form-label">Email address *</label>
-                            <input type="email" className="form-control " id="email" value={selectedemail}
-                                   onChange={e => setSelectedemail(e.target.value)}
-                                   aria-describedby="emailHelp"/>
+                            <label htmlFor="email" className="form-label">Email address *
+                                <input type="email" className="form-control " id="email" value={selectedemail}
+                                       onChange={e => setSelectedemail(e.target.value)}
+                                       aria-describedby="emailHelp"/></label>
                             <div id="emailHelp"
                                  className={selectedemailerror === '' ? 'form-text' : 'form-text active'}>{selectedemailerror}
                             </div>
                         </div>
                         <div className="col-12 field">
-                            <label htmlFor="lastname" className="form-label">Telephone</label>
-                            <input type="tel" className="form-control" id="telephone" value={selectedtelephone}
-                                   onChange={e => setSelectedtelephone(e.target.value)}
-                                   aria-describedby="lastnameHelp"/>
-                            <div id="emailHelp"
+                            <label htmlFor="telephone" className="form-label">Telephone
+                                <input type="tel" className="form-control" id="telephone" value={selectedtelephone}
+                                       onChange={e => setSelectedtelephone(e.target.value)}
+                                       aria-describedby="lastnameHelp"/></label>
+                            <div id="telHelp"
                                  className={selectedtelephoneerror === '' ? 'form-text' : 'form-text active'}>{selectedtelephoneerror}
                             </div>
                         </div>
                         <div className="col-12 field">
-                            <label htmlFor="exampleFormControlTextarea1" className="form-label">Message</label>
-                            <textarea className="form-control text-area" id="message" value={selectedmessage}
-                                      onChange={e => setSelectedmessage(e.target.value)}
-                                      rows="3"></textarea>
-                            <div id="emailHelp"
+                            <label htmlFor="message" className="form-label">Message
+                                <textarea className="form-control text-area" id="message" value={selectedmessage}
+                                          onChange={e => setSelectedmessage(e.target.value)}
+                                          rows="3"></textarea>
+                            </label><div id="messsageHelp"
                                  className={selectedmessageerror === '' ? 'form-text' : 'form-text active'}>{selectedmessageerror}
                             </div>
                         </div>
@@ -163,10 +165,10 @@ const Reach = () => {
                             {/*<br/>*/}
                             {/*<input type="checkbox" className="form-check-input" id="tandc"*/}
                             {/*       />*/}
-                            <label className="form-check-label" htmlFor="exampleCheck1">I agree to the <span
+                            <label className="form-check-label" htmlFor="tandc">I agree to the <span
                                 className={'t-and-c-link'}>
                                     <a href="#" className={'t-and-c-link'}>Terms & Conditions</a></span></label>
-                            <div id="emailHelp"
+                            <div id="tandcHelp"
                                  className={selectedtandcerror === '' ? 'form-text' : 'form-text active'}>{selectedtandcerror}
                             </div>
                         </div>

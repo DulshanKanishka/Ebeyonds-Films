@@ -18,7 +18,15 @@
     padding-right: 0 !important;;
 
 }
-
+.mob-menu-close > svg{
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+}
+.mob-menu-close {
+    margin-right: 27px;
+    opacity: 1;
+}
 .mobile-menu-btn:focus {
     box-shadow: none !important;
 }
