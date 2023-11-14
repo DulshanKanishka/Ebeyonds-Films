@@ -6,7 +6,6 @@ import * as Apis from '../../service/apis';
 const Search = (props) => {
 
     const [selectedSearchTxt, setSelectedSearchTxt] = useState('');
-    const [autocompletedataisset, setautocompletedataisset] = useState(false);
     const [autocompletedata, setautocompletedata] = useState(<div className={'hidden-div'}></div>);
 
     const typedTxt = (event) => {

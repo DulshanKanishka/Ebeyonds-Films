@@ -2,8 +2,8 @@ import React from 'react';
 import "./home.css";
 import Banner from "../../assets/images/banner.png";
 import Bannertwo from "../../assets/images/bannertwo.jpg";
-import Reach from "../../components/reach/reach";
 import Films from "../../components/films/films";
+import Reach from "../../components/reach/reach";
 
 const Home = () => {
 
@@ -18,7 +18,6 @@ const Home = () => {
                     </div>
                     <div className="carousel-item">
                         <img src={Bannertwo} className={'main-banner'} alt="Movie thetor"/>
-
                     </div>
 
                 </div>

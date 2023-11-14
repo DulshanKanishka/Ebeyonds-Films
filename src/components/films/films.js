@@ -61,10 +61,15 @@ const Films = () => {
                 {itemsArray.map((item, index) => (
                     <div className={' gap-between-films'} key={item.id}>
                         <div className={'static-movie-close-btn '} onClick={() => removeItem(index)}>
+                            {/*<svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none">*/}
+                            {/*    <path d="M0.786133 0H57.929V57.1429H0.786133V0Z" fill="#1D1D1D" fill-opacity="0.902"/>*/}
+                            {/*    <path d="M22.8926 22.1062L35.8225 35.0362" stroke="#B7B7B7" stroke-width="2.28571"/>*/}
+                            {/*    <path d="M35.8232 22.1061L22.8933 35.036" stroke="#B7B7B7" stroke-width="2.28571"/>*/}
+                            {/*</svg>*/}
                             <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none">
-                                <path d="M0.786133 0H57.929V57.1429H0.786133V0Z" fill="#1D1D1D" fill-opacity="0.902"/>
-                                <path d="M22.8926 22.1062L35.8225 35.0362" stroke="#B7B7B7" stroke-width="2.28571"/>
-                                <path d="M35.8232 22.1061L22.8933 35.036" stroke="#B7B7B7" stroke-width="2.28571"/>
+                                <path d="M0.786133 0H57.929V57.1429H0.786133V0Z" fill="#1D1D1D" fillOpacity="0.902"/>
+                                <path d="M22.8926 22.1062L35.8225 35.0362" stroke="#B7B7B7" strokeWidth="2.28571"/>
+                                <path d="M35.8232 22.1061L22.8933 35.036" stroke="#B7B7B7" strokeWidth="2.28571"/>
                             </svg>
                         </div>
                         <div className={'image-container'}>
