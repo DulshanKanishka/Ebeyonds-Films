@@ -2,6 +2,7 @@ import React from 'react';
 import "./home.css";
 import Banner from "../../assets/images/banner.png";
 import Bannertwo from "../../assets/images/bannertwo.jpg";
+import Bannerhree from "../../assets/images/bannerthree.jpg";
 import Films from "../../components/films/films";
 import Reach from "../../components/reach/reach";
 
@@ -17,7 +18,10 @@ const Home = () => {
                         <img src={Banner} className={'main-banner'} alt="Movie thetor"/>
                     </div>
                     <div className="carousel-item">
-                        <img src={Bannertwo} className={'main-banner'} alt="Movie thetor"/>
+                        <img src={Bannertwo} className={'main-banner'} alt="Movie thetor one"/>
+                    </div>
+                    <div className="carousel-item">
+                        <img src={Bannerhree} className={'main-banner'} alt="Movie thetor two"/>
                     </div>
 
                 </div>
