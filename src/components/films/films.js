@@ -66,7 +66,7 @@ const Films = () => {
                             <img src={item.image} alt="" className={'film-static-img'}/>
                         </div>
                         <div className={'film-static-details'}>
-                            <h3 className={'film-static-title'}>{item.title}</h3>
+                            <p className={'film-static-title'}>{item.title}</p>
                             <p className={'fil-static-desctription'}>{item.shortDescription}</p>
                         </div>
                     </div>

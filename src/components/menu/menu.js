@@ -52,9 +52,9 @@ const Menu = () => {
             <nav className="navbar navbar-dark main-menu-mobile">
                 <div className="container-fluid mobile-padding-zero">
                     {/*<a className="navbar-brand" href="#">Offcanvas dark navbar</a>*/}
-                    <button className="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="offcanvas"
+                    <button className="navbar-toggler mobile-menu-btn mobile-mmenu-open-btn" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                        {/*<span className="navbar-toggler-icon"></span>*/}
+                        .
                         <MenuIcon/>
                     </button>
                     <div className="offcanvas offcanvas-end text-bg-dark" tabIndex="-1" id="offcanvasDarkNavbar"

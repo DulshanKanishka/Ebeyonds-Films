@@ -27,6 +27,9 @@
     margin-right: 27px;
     opacity: 1;
 }
+.mobile-mmenu-open-btn {
+    color: transparent !important;
+}
 .mobile-menu-btn:focus {
     box-shadow: none !important;
 }
