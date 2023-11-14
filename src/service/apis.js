@@ -10,7 +10,6 @@ const _prepareApiObj = (method, endpoint, body, state) => {
     return apiObject;
 }
 
-/////////////////////////////////////////////////////////////
 export async function searchFilms(name) {
 
     let url = `/search/shows?q=${name}`;

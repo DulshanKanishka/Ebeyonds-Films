@@ -1,7 +1,5 @@
 import axios from "axios"
 import * as base_url from './public_urls'
-// import Cookies from 'js-cookie';
-// import * as Constant from '../util/constants';
 
 let result
 export const callApi = async (apiObject) => {
@@ -37,7 +35,6 @@ export const callApi = async (apiObject) => {
                 resolve(result)
             }).catch(async error => {
 
-            console.log('JACK')
 
             if (error !== undefined) {
                 if (error.response === undefined) {
@@ -53,11 +50,9 @@ export const callApi = async (apiObject) => {
                     }
                 } else if (error.response.status === 401) {
 
-                    console.log('JACK---------------------1')
 
                     let t = error.response.data
                     t.message = error.response.data.message ? error.response.data.message : ""
-                    console.log('JACK---------------------2')
                     result = await {
                         success: false,
                         status: 401,
@@ -67,7 +62,6 @@ export const callApi = async (apiObject) => {
 
                 } else {
                     let t = error.response.data
-                    console.log('JACK---------------------3')
                     t.message = error.response.data.message ? error.response.data.message : ""
                     result = await {
                         success: false,
@@ -77,7 +71,6 @@ export const callApi = async (apiObject) => {
                     }
                 }
             } else {
-                console.log('JACK---------------------4')
                 result = await {
                     success: false,
                     status: 2,

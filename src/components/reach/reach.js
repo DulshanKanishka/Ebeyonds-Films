@@ -1,23 +1,9 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState} from 'react';
 import './reach.css'
-import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 import Gmap from "../gmap/gmap";
 
 const Reach = () => {
-    // useEffect(() => {
-    //     const myLatLng = {lat: 6.8448775, lng: 79.940426};
-    //     const map = new window.google.maps.Map(document.getElementById("map"), {
-    //         zoom: 18,
-    //         center: myLatLng,
-    //     });
-    //
-    //     // Add a marker to the map
-    //     const marker = new window.google.maps.Marker({
-    //         position: myLatLng,
-    //         map: map,
-    //         title: "Your Location",
-    //     });
-    // }, []);
+
     const [selectedfirstname, setSelectedfirstname] = useState('');
     const [selectedlastname, setSelectedlastname] = useState('');
     const [selectedemail, setSelectedemail] = useState('');
